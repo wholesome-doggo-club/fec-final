@@ -27,3 +27,11 @@ body div span {
 #app-filler {
   height: 55px;
 }
+
+#bottom-picture {
+  width: 100%;
+  height: 60%;
+  bottom: 0;
+  border: 1px solid black;
+  object-fit: cover;
+}
