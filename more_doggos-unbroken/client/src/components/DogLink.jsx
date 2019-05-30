@@ -56,8 +56,8 @@ class DogCard extends React.Component {
               <div className="dogcard-info">
                 <div className="dogcard-info-name">{this.props.doggo.name}</div>
                 <div className="dogcard-info-extra">{this.props.doggo.breed}</div>
-                <div>{this.props.doggo.age} | {this.props.doggo.gender}</div>
-                <div>{this.props.doggo.location}</div>
+                <div className="dogcard-info-extra">{this.props.doggo.age} | {this.props.doggo.gender}</div>
+                <div className="dogcard-info-extra">{this.props.doggo.location}</div>
               </div>
             }
           </div>

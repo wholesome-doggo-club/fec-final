@@ -56,7 +56,6 @@
   font-family: 'Nexa';
   background: #6504B5;
   font-size: 13px;
-  font-weight: bolder;
 }
 
 .bottombar-ask:hover {
@@ -71,7 +70,7 @@
   /* border: 1px solid black; */
   height: 42px;
   width: 42px;
-  /* background-image: url(../files/shareHover.jpg); */
+  background-image: url(https://s3-us-west-1.amazonaws.com/petfinder-doggos/files/shareHover.jpg);
   background-size: cover;
 }
 

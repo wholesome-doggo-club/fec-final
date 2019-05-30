@@ -7,6 +7,7 @@
   align-content: center;
   box-shadow: 2px 2px 3px 1px lightgray;
   margin-bottom: 40px;
+  font-family: 'Nexa';
 }
 
 .askabout-top {
@@ -121,6 +122,7 @@
   padding-left: 15px;
   font-size: 14px;
   color: gray;
+  font-family: 'Nexa';
   margin-right: 20px;
   margin-top: 20px;
   float: left;
@@ -145,6 +147,7 @@
   font-size: 14px;
   line-height: 20px;
   color: gray;
+  font-family: 'Nexa';
 }
 
 .askabout-eula-checkbox {
@@ -192,6 +195,7 @@
   margin-top: 40px;
   margin-left: 15px;
   color: gray;
+  font-family: 'Nexa';
 }
 
 .askabout-yesorno {
@@ -204,6 +208,7 @@
   right: 30px;
   bottom: 80px;
   color: gray;
+  font-family: 'Nexa';
 }
 
 .askabout-yes {
@@ -214,6 +219,7 @@
   left: 0;
   text-align: center;
   line-height: 69px;
+  font-family: 'Nexa';
 }
 
 .askabout-yes:hover {
@@ -234,6 +240,7 @@
   color: white;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  font-family: 'Nexa';
 }
 
 .askabout-no {
@@ -243,6 +250,7 @@
   right: 0;
   text-align: center;
   line-height: 69px;
+  font-family: 'Nexa';
 }
 
 .askabout-no:hover {
@@ -263,6 +271,7 @@
   color: white;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  font-family: 'Nexa';
 }
 
 .askabout-button {
@@ -278,6 +287,7 @@
   border-radius: 45px;
   background-color: #6504B5;
   color: white;
+  font-family: 'Nexa';
 }
 
 .askabout-button:hover {
