@@ -37,7 +37,7 @@
   background-color:transparent;
   display: inline-block;
   height: 70px;
-  /* font-family: 'Nexa Regular', helvetica, arial, sans-serif; */
+  font-family: "Nexa";
 }
 
 .nav-top-button {
@@ -50,7 +50,7 @@
   display: inline-block;
   font-weight: 700;
   font-size: 14px;
-  /* font-family: 'Nexa Bold', helvetica, arial, sans-serif; */
+  font-family: "Nexa";
 }
 
 .nav-gray-purple {
@@ -58,7 +58,7 @@
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
-  /* font-family: 'Nexa Bold', helvetica, arial, sans-serif; */
+  font-family: "Nexa";
 }
 
 .nav-gray-purple:hover {
@@ -198,11 +198,11 @@ wtf
   padding: 120px 60px 60px;
   font-size: 14px;
   font-weight: 700;
-  /* font-family: 'Nexa Bold', helvetica; */
+  font-family: "Nexa";
 }
 .nav-popup-right-container h1{
   text-align: left;
-  /* font-family: 'Nexa Regular', helvetica; */
+  font-family: "Nexa";
 }
 
 .nav-popup-right-container a {
@@ -210,7 +210,7 @@ wtf
   color:#6504b5;
   font-size: 14px;
   font-weight: 700;
-  /* font-family: 'Nexa Bold', helvetica; */
+  font-family: "Nexa";
   text-decoration: none;
 }
 .nav-popup-right-container a:hover {
@@ -238,7 +238,7 @@ wtf
   font-size: 16px;
   line-height: normal;
   font-weight: 700;
-  /* font-family: "Nexa Bold" */
+  font-family: "Nexa";
 }
 .nav-popup-container-form {
   position: relative;
@@ -287,8 +287,7 @@ wtf
   -webkit-appearance: none;
   font-weight: 700;
   font-size: 14px;
-  /* font-family: 'Nexa Bold', helvetica; */
-  /* font-size: 14px; */
+  font-family: "Nexa";
   line-height: 1.4;
 }
 
@@ -312,7 +311,7 @@ wtf
   padding: 120px 60px 60px;
   font-size: 14px;
   font-weight: 700;
-  /* font-family: 'Nexa Bold', helvetica; */
+  font-family: "Nexa";
 
 }
 .nav-popup-left-container li{
