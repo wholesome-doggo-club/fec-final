@@ -20,8 +20,8 @@ body div span {
 
 #app-photos-container {
   min-width: 100px;
-  min-height: 500px;
-  background-color: yellow;
+  /* min-height: 500px; */
+  /* background-color: yellow; */
 }
 
 #app-filler {

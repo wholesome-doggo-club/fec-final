@@ -110,7 +110,7 @@ class App extends React.Component {
 
   render () {
     const { currentIndex, gallery, view, currentDot } = this.state;
-    const size = 400;
+    const size = 500;
     
     if(view === 'main' && gallery.length > 0) {
       return (
@@ -125,14 +125,16 @@ class App extends React.Component {
             </div>
             <button id="btnExpand"  className="flickity-button flickity-prev-next-button next" onClick={this.handleExpandPhoto}></button>
           </div>
-          <div className="photoContainer">
-            <div 
-              className={` active-${gallery[currentIndex].id}  photoSlider `}
-              style={{'transform': 'translateX(' + (-size * currentIndex) + 'px)'}}
-            >
-              {gallery.map((item, index) => <Photo item={item} key={index}/>)}
+            <div className="photoMain">
+              <div className="photoContainer">
+                <div 
+                  className={` active-${gallery[currentIndex].id}  photoSlider `}
+                  style={{'transform': 'translateX(' + (-size * currentIndex) + 'px)'}}
+                >
+                  {gallery.map((item, index) => <Photo item={item} key={index}/>)}
+               </div>
+              </div>
             </div>
-          </div>
           <NavDots currentDot={currentDot} handleCurrentIndex={this.handleCurrentIndex} gallery={gallery}/>
         </div>
       )
