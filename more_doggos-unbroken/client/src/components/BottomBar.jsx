@@ -9,7 +9,7 @@ const BottomBar = (props) => {
         <div className="bottombar-name">{props.doggo.name}</div>
         <div className="bottombar-extra"> {props.doggo.breed} | Adult | {props.doggo.sex}</div>
       </div>
-      <div className="bottombar-ask">Ask About {props.doggo.name}</div>
+      <div className="bottombar-ask" onClick={() => document.getElementById('askabout-outer').scrollIntoView()}>Ask About {props.doggo.name} </div>
       <div className="bottombar-share"></div>
     </div>
   )
