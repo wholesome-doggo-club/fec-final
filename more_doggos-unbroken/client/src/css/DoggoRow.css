@@ -1,0 +1,38 @@
+/* @font-face {
+  font-family: 'Nexa';
+  font-style: regular;
+  font-weight: 400;
+  src: url(fonts/NexaRegular.woff) format('woff');
+} */
+
+.doggorow-outer {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 30vw;
+    min-height: 286px;
+    max-height: 383px;
+    /* border: 5px solid red; */
+}
+
+.title-thing-TEMP {
+    text-align: center;
+    width:100%;
+    top: 20px;
+    font-family: 'Nexa';
+    font-size: 40px;
+    color: #6504B5;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:1000px) {
+    .doggorow-outer {
+        border: 5px solid red;
+    }
+}
+
+.filler {
+    width: 100%;
+    height: 100px;
+
+}

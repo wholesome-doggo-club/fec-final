@@ -1,0 +1,322 @@
+#nav-bar-frame {
+  display: flex;
+  background-color: #f0f0f0;
+  text-align: center;
+  position:absolute; 
+  /* this allows the navigation bar to stretch through the entire screen but it cuts off a small section of the top page */
+  left: 0;
+  min-width:1235px;
+  right: 0;
+  top: 0;
+  padding:0px;
+  height:70px;
+  background-size:100%;
+  z-index: 99;
+  box-shadow: 0px 1px 3px #50028f69;
+}
+
+#nav-top-bar-register{
+  background-color:white;
+  width:23%;
+  min-width:235px;
+  height:70px;
+}
+
+.left-border {
+  border-left: 1px solid #410078;
+}
+
+.nav-top-container-register{
+  background-color:white;
+  float:left;
+  height:70px;
+  min-width:200px;
+}
+
+.nav-top-container-btn {
+  background-color:transparent;
+  display: inline-block;
+  height: 70px;
+  font-family: 'Nexa Regular', helvetica, arial, sans-serif;
+}
+
+.nav-top-button {
+  height:100%;
+  background-color: transparent;
+  border: none;
+  color: #4D4751;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Nexa Bold', helvetica, arial, sans-serif;
+}
+
+.nav-gray-purple {
+  color: #4D4751;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: 'Nexa Bold', helvetica, arial, sans-serif;
+}
+
+.nav-gray-purple:hover {
+  color: #6504b5;
+}
+
+.nav-register-icon {
+
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  background: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-register.png") no-repeat center;
+  background-size:28px 30px;
+  display: inline-block;
+}
+
+/* .nav-register-icon:hover {
+  color: #4D4751;
+
+} */
+
+.nav-top-button:hover .nav-register-icon{
+  color: #6504b5;
+  background: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-register-hover.png") no-repeat center;
+  background-size:28px 30px;
+}
+
+/* [Object] Modal
+ * =============================== */
+ .modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: #2e0152;
+  transition: opacity .25s ease;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  border-radius: 10px;
+  /* padding: 1em 2em; */
+  height: 687px;
+  max-width: 924px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+	
+  .modal__inner {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+  }
+}
+
+/* .blank {
+wtf
+} */
+
+
+.nav-popup-right-container{
+  text-align:center;
+  display: inline-block;
+  background-color: white;
+  color: #4d4751;
+  line-height: 1.2;
+  width: 50%;
+  height: 507px;
+  padding: 120px 60px 60px;
+  font-size: 14px;
+  font-family: 'Nexa Bold', helvetica;
+}
+.nav-popup-right-container h1{
+  text-align: left;
+  font-family: 'Nexa Regular', helvetica;
+}
+
+.nav-popup-right-container a {
+  text-align: center;
+  color:#6504b5;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Nexa Bold', helvetica;
+  text-decoration: none;
+}
+.nav-popup-right-container a:hover {
+  color:#2e0152;
+  text-decoration: underline;
+}
+
+.nav-popup-right-container p {
+  margin-bottom: 30px; /* between paragraphs */
+}
+
+.nav-popup-container-form input {
+  box-sizing: border-box;
+  display: block;
+  width: 342px;
+  height: 55px;
+  padding: 22px 15px 2px;
+  background-color: #fff;
+  border: 1px solid #d2d1d3;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #6504b5;
+  font-size: 16px;
+  line-height: normal;
+  font-family: "Nexa Bold"
+}
+.nav-popup-container-form {
+  position: relative;
+}
+
+.field-label {
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  pointer-events: none;
+}
+
+.nav-popup-container-btn:hover {
+  background-color:#2e0152;
+  border: 2px solid #2e0152;
+}
+
+.nav-popup-container-btn {
+  width: 342px;
+  background-color: #6504b5;
+  margin: 0;
+  background: transparent;
+  color: inherit;
+  text-decoration: inherit;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 45px;
+  max-width: 100%;
+  padding: 11px 30px;
+  border: 2px solid #6504b5;
+  border-radius: 23px;
+  background-color: #6504b5;
+  -webkit-box-shadow: 0 1px 3px rgba(77,71,81,.2);
+  box-shadow: 0 1px 3px rgba(77,71,81,.2);
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Nexa Bold', helvetica;
+  /* font-size: 14px; */
+  line-height: 1.4;
+}
+
+.line-partition {
+  width: 342px;
+  border-bottom: 1px solid #d2d1d3;
+  padding: 10px 0px 15px 0px;
+}
+
+#nav-pop-up-main {
+  display:flex;
+}
+
+.nav-popup-left-container{
+  display: inline-block;
+  background-color: #6504b5;
+  width: 50%;
+  max-height: 507px;
+  text-align:left;
+  color: white;
+  padding: 120px 60px 60px;
+  font-size: 14px;
+  font-family: 'Nexa Bold', helvetica;
+
+}
+.nav-popup-left-container li{
+  font-size: 14px;
+  margin: 20px 0px 0px 0px;
+  line-height: 1.6;
+}
+
+.nav-popup-left-container ul {
+  padding-left: 10px;
+}

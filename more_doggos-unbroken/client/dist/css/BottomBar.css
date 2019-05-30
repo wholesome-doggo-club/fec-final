@@ -1,0 +1,82 @@
+.bottombar-outer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    width: 100%;
+    /* border: 1px solid black; */
+    border-top: 1px solid lightgray;
+    background-color: white;
+    z-index: 30;
+}
+
+.bottombar-image {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    left: 110px;
+    top: 20%;
+}
+
+.bottombar-info {
+ 
+}
+
+.bottombar-name {
+    position: absolute;
+    left:180px;
+    top: 25%;
+    font-family: 'Nexa';
+    color: #6504B5;
+    font-size: 17px;
+}
+
+.bottombar-extra {
+    position: absolute;
+    left:180px;
+    top: 60%;
+    font-family: 'Nexa';
+    color: gray;
+    font-size: 15px;
+}
+
+.bottombar-ask {
+  position: absolute;
+  right: 160px;
+  top: 20%;
+  border-radius: 50px;
+  /* border: 1px solid black; */
+  height: 42px;
+  width: 220px;
+  text-align: center;
+  line-height: 45px;
+  color: white;
+  font-family: 'Nexa';
+  background: #6504B5;
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.bottombar-ask:hover {
+  background: #4d0e84;
+}
+
+.bottombar-share {
+  position: absolute;
+  right: 100px;
+  top: 20%;
+  border-radius: 100%;
+  /* border: 1px solid black; */
+  height: 42px;
+  width: 42px;
+  background-image: url(../files/shareHover.jpg);
+  background-size: cover;
+}
+
+.bottombar-share:hover {
+  height: 36px;
+  width: 36px;
+  border: 3px solid #4d0e84;
+}

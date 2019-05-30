@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Nexa';
+    font-style: regular;
+    font-weight: 400;
+    src: url(NexaRegular.woff) format('woff');
+  }
+
+body div span {
+    font-family: 'Nexa' !important;
+}
+
+#app-nav {
+  z-index: 999;
+}
+
+#app-doggos {
+  z-index: 10;
+}
+
+#app-photos-container {
+  min-width: 100px;
+  min-height: 500px;
+  background-color: yellow;
+}
+
+#app-filler {
+  height: 55px;
+}

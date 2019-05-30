@@ -1,0 +1,326 @@
+@font-face{
+  font-family: "Nexa Regular";
+  src: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/Nexa-Light.otf")
+}
+
+.nav-form-bar-drop-find {
+  min-width:1235px;
+  background-color: #6504b5;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  height: 100px;
+  position:absolute; 
+  left: 0;
+  right: 0;
+  top: 70px;
+  transform: scaleY(0);
+  transform-origin: center top;
+  transition: transform .15s cubic-bezier(.215,.61,.355,1), -webkit-transform .15s cubic-bezier(.215,.61,.355,1);
+}
+
+
+
+.nav-container-find-search {
+  background-color:red;
+  height: 100%;
+  width: 30%;
+  min-width:275px;
+  display: inline-block;
+}
+.nav-container-find-choices {
+  background-color:green;
+  height:100%;
+  width: 60%;
+  min-width: 600px;
+  display: inline-block;
+}
+
+.fake3 {
+  background-color:transparent;
+  color: transparent;
+  height:100%;
+  width: 50px;
+  display: inline-block;
+}
+
+
+
+
+
+
+.nav-btn-find-search-bar {
+  background-color: #2e0152;
+  color: white;
+  font-size: 14px;
+  border: none;
+  cursor:text;
+  width: 100%;
+  min-width: 250px;
+  height:100%;
+
+  /* line-height: 100px; */
+  /* trying to vertically align with lign-height */
+  
+  text-decoration: none;
+  display: inline-block;
+  border-top: none;
+
+}
+
+
+
+
+
+.nav-btn-container-find-choices {
+
+  background-color: #6504b5;
+  color: white;
+  font-size: 14px;
+  height:100%;
+  width: 33.2%;
+  min-width:200px;
+  border-top: none;
+  border-left: 1px solid #2e0152;
+  display: inline-block;
+  /* border-right: 1px solid red; */
+
+}
+
+.nav-btn-container-find-choices button table{
+  font-size: 14px;
+  color: white;
+}
+
+.nav-find-search-type {
+  background-color: transparent;   /* Green #6504b5;*/
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 14px;
+  padding: 0px;
+  height:100px;
+  width: 100%;
+  transition: 0.3s;
+  /* border: 1px solid #2e0152; */
+}
+
+.nav-find-search-type:hover {
+  cursor: pointer;
+  background-color: #410078;
+}
+
+@keyframes fadein {
+  from { opacity: 0.5; }
+  to   { opacity: 1; }
+}
+
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+.nav-find-location-search{
+  display: inline-block;
+  height:100%;
+  width: 100%;
+}
+
+.filler {
+  display: inline-block;
+  height:100%;
+  width: 100%;
+}
+
+.filler-image{
+  line-height: 100px;
+  display: inline-block;
+  height:100%;
+}
+
+.location-search {
+  background-color: transparent;
+  border: none;
+  padding: 40px;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  font-family: "Nexa Regular", helvetica;
+}
+
+.location-search::placeholder {
+  color: white;
+}
+
+.nav-find-search-type-table{
+  font-size: 14px;
+  font-family: "Nexa Regular", helvetica;
+
+  height:100%;
+}
+
+.nav-find-otherPets-dropdown{
+  color:#fff;
+  display: block;
+  width:100%;
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    padding: 20px 24px;
+    z-index: 3;
+    background-color: #410078;
+    border-radius: 0 0 10px 10px;
+    text-align: left;
+    -webkit-box-shadow: 0 1px 3px rgba(77,71,81,.2);
+    box-shadow: 0 1px 3px rgba(77,71,81,.2);
+}
+
+.nav-find-otherPets-dropdown-btn {
+  font-family: "Nexa Regular";
+  display: block;
+  width: 241px;
+  color: #fff;
+  font-size: 13px;
+  padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    text-decoration: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.nav-find-locationSearch-dropdown{
+  color:black;
+  display: block;
+  width:100%;
+    min-width: 300px;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    /* padding: 20px 0 10px; */
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(77,71,81,.2);
+    box-shadow: 0 1px 3px rgba(77,71,81,.2);
+}
+
+.nav-find-locationSearch-dropdown ul li {
+  cursor: pointer;
+  list-style-type: none;
+  list-style-position:inside;
+  margin-left:-20px;
+  margin-bottom: 10px;
+  padding:0; 
+  text-align: left;
+}
+
+.nav-find-locationSearch-dropdown li:hover {
+  color: #410078;
+  cursor: pointer;
+}
+
+
+/* 
+==========================
+ARROW ON SEARCH BAR  
+==========================
+*/
+
+.nav-find-locationSearch-dropdown:after,
+.nav-find-locationSearch-dropdown:before {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.nav-find-locationSearch-dropdown:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 14px;
+  left: 50%;
+  margin-left: -14px;
+}
+
+.nav-find-locationSearch-dropdown:before {
+  border-color: rgba(113, 158, 206, 0);
+  border-bottom-color: rgba(77,71,81,.2);
+  border-width: 15px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+
+.nav-btn-find-search-bar:after,
+.nav-btn-find-search-bar:before {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.nav-btn-find-search-bar:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 14px;
+  left: 50%;
+  margin-left: -14px;
+}
+
+.nav-btn-find-search-bar:before {
+  border-color: rgba(113, 158, 206, 0);
+  border-bottom-color: rgba(77,71,81,.2);
+  border-width: 15px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+
+.animateNav {
+  animation-duration: 0.15s;
+  -webkit-animation-duration: 0.15s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes slideInDown {
+  from {
+    transform: scaleY(0);
+    visibility: hidden;
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: scaleY(0);
+    visibility: hidden;
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.navSlideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}

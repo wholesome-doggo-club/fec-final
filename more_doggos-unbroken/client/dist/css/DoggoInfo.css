@@ -1,0 +1,209 @@
+.doggoinfo-outer {
+  position: relative;
+  display: inline-block;
+  height: 1000px;
+  width: 85%;
+  /* border: 1px solid black; */
+  font-family: 'Nexa';
+}
+
+.doggoinfo-left {
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 63%;
+  left: 0;
+  /* border: 1px solid blue; */
+  text-align: left;
+  padding-left: 30px;
+  color: #444444;
+  background: white;
+  border-radius: 10px;
+}  
+
+.doggoinfo-left-title{
+  font-size: 40px;
+}
+
+.doggoinfo-left-description {
+  display: inline-block;
+  height: 60px;
+  width: 95%;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  text-align: left;
+  line-height: 60px;
+}
+
+.doggoinfo-about {
+  padding-bottom: 30px;
+  border-bottom: 1px solid gray;
+}
+
+.doggoinfo-meet-info {
+  font-size: 14px;
+  line-height: 20px;
+  padding-right: 20px;
+}
+
+.doggoinfo-right {
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 32%;
+  right: 0;
+  /* border: 1px solid blue; */
+  text-align: center;
+}
+
+.doggoinfo-right-top {
+  position: absolute;
+  width: 100%;
+  height: 210px;
+  /* border: 1px solid black; */
+  top: 0;
+  background-color: #6504B5;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 2px lightgray;
+}
+
+.doggoinfo-right-top-ask {
+  position: absolute;
+  width: 85%;
+  height: 42px;
+  border-radius: 23px;
+  background-color: white;
+  border: 2px solid white;
+  color: #6504B5;
+  text-align: center;
+  font-size: 16px;
+  line-height: 48px;
+  top: 10%;
+  left: 7%;
+}
+
+.doggoinfo-right-top-ask:hover {
+  background-color: #6504B5;
+  color: white;
+}
+
+.doggoinfo-right-top-sponsor {
+  position: absolute;
+  width: 85%;
+  height: 42px;
+  border-radius: 23px;
+  background-color: #6504B5;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 48px;
+  top: 40%;
+  left: 7%;
+}
+
+.doggoinfo-right-top-sponsor:hover {
+  background-color: white;
+  color: #6504B5;
+}
+
+.doggoinfo-right-top-shareprint {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  bottom: 0;
+  border-top: 1px solid black;
+  color: white;
+}
+
+.doggoinfo-right-top-share {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  border-right: 1px solid black;
+  line-height: 60px;
+}
+
+.doggoinfo-right-top-share:hover {
+  background-color: rgb(69, 0, 126);
+}
+
+.doggoinfo-right-top-print {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  line-height: 60px;
+}
+
+.doggoinfo-right-top-print:hover {
+  background-color: rgb(69, 0, 126);
+}
+
+.doggoinfo-right-bottom {
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  /* border: 1px solid black; */
+  bottom: 90px;
+}
+
+.doggoinfo-right-bottom-image {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 8px solid white;
+  z-index: 10;
+  left: 35%;
+}
+
+.doggoinfo-right-bottom-inner {
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  bottom: 0;
+  background-color: white;
+  z-index: 5;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+.doggoinfo-right-bottom-location {
+  width: 80%;
+  margin-left: 40px;
+  padding-bottom: 14px;
+  text-align: left;
+  border-bottom: 1px solid lightgray;
+}
+
+.doggoinfo-right-bottom-email {
+  width: 80%;
+  margin-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  text-align: left;
+  border-bottom: 1px solid lightgray;
+}
+
+.doggoinfo-right-bottom-button{
+  position: absolute;
+  width: 90%;
+  height: 45px;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid gray;
+  bottom: 8%;
+  left: 5%;
+  line-height: 50px;
+  font-size: 13px;
+}
+
+.doggoinfo-right-bottom-button:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}

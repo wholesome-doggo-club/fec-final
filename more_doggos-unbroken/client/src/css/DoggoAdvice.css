@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Nexa';
+  font-style: regular;
+  font-weight: 800;
+  src: url(https://s3-us-west-1.amazonaws.com/petfinder-doggos/fonts/NexaRegular.woff) format('woff');
+}
+
+.doggoadvice-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 70%;
+}
+
+.doggoadvice-outer {
+  position: relative;
+  display: inline-block;
+  height: 520px;
+  width: 40%;
+  /* border: 1px solid black; */
+  border-radius: 8px;
+  margin: 2%;
+  box-shadow: 2px 2px 5px lightgray;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.doggoadvice-top {
+  position: absolute;
+  width: 100%;
+  height: 89%;
+  top: 0;
+  /* border: 1px solid black; */
+  border-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  background-color: white;
+}
+
+.doggoadvice-bottom {
+  position: absolute;
+  width: 100%;
+  height: 11%;
+  bottom: 0;
+  border-top: 1px solid #bfbfbf;
+  border-radius: 0 0 8px 8px;
+  background-color: white;
+  font-family: 'Nexa';
+  font-weight: bolder;
+  font-size: 13px;
+  color: #404040;
+  line-height: 60px;
+}
+
+.doggoadvice-bottom:hover {
+  background-color: #6504B5;
+  color: white;
+}
+
+.doggoadvice-bigimage {
+  object-fit: cover;
+  height: 60%;
+  width: 100%;
+  z-index: -1;
+}
+
+.doggoadvice-smallimage {
+  position: absolute;
+  object-fit: cover;
+  height: 90px;
+  width: 90px;
+  top: 40%;
+  left: 40%;
+  z-index: 20;
+  border-radius: 100%;
+  border: 6px solid white;
+}
+
+.doggoadvice-filler {
+  position: absolute;
+  content: "";
+  height: 6%;
+  width: 100%;
+  border-radius: 50% 50% 0 0;
+  background-color: white;
+  bottom: 38%;
+  z-index: 0;
+}
+
+.doggoadvice-info {
+  width: 100%;
+  height:50%;
+  background-color: white;
+  /* border: 1px solid black; */
+  text-align: center;
+  bottom: 0px;
+}
+
+.doggoadvice-info-main {
+  position: absolute;
+  width: 100%;
+  font-family: 'Nexa';
+  color: #404040;
+  font-size: 20px;
+  bottom: 19%;
+}
+
+.doggoadvice-info-secondary {
+  position: absolute;
+  width: 100%;
+  font-family: 'Nexa';  
+  color: #404040;
+  font-size: 14px;
+  bottom: 13%;
+}

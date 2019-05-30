@@ -1,0 +1,198 @@
+button:focus, input:focus{
+  outline: none;
+}
+
+#nav-top-bar-main {
+  background-color:white;
+  width:77%;
+  min-width:300px;
+  height:70px;
+  /* z-index:2; */
+  transition: all 0.5s ease;
+}
+
+#nav-top-bar-searching {
+  background-color:#6504b5;
+  width:77%;
+  min-width:300px;
+  height:70px;
+  transition: all 0.5s ease;
+}
+
+@font-face{
+  font-family: "Nexa Regular";
+  src: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/Nexa-Light.otf")
+}
+
+@font-face{
+  font-family: "Nexa Bold";
+  /* src: url('Nexa-Bold.otf') */
+}
+
+body, div, span, input {
+  font-family: 'Nexa Regular', helvetica, arial, sans-serif;
+  font-size: 14px;
+}
+
+
+.nav-top-container-logo{
+  background-color:transparent;
+  float: left;
+  height:70px;
+  min-width:150px;
+  width:25%;
+}
+
+.nav-top-container-dir{
+  background-color:transparent;
+  float:left;
+  padding: 0px 20px;
+
+}
+.nav-top-container-search{
+  background-color:transparent;
+  /* padding: 0px 0px; */
+  float:right;
+  height:70px;
+
+}
+
+
+
+.nav-top-container-btn {
+  background-color:transparent;
+  display: inline-block;
+  height: 70px;
+  font-family: 'Nexa Regular', helvetica, arial, sans-serif;
+
+  /* background-color:red; */
+}
+
+.dark:hover {
+  background-color: #410078;
+}
+
+.nav-top-container-btn-right {
+  background-color:transparent;
+  float:right;
+  height:70px;
+  font-family: 'Nexa Regular', helvetica, arial, sans-serif;
+
+}
+.nav-top-button-articles {
+  height:100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 0;
+  font-size: 14px;
+  font-family: 'Nexa Regular', helvetica, arial, sans-serif;
+}
+
+.nav-top-button {
+  height:100%;
+  background-color: transparent;
+  border: none;
+  color: #4D4751;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Nexa Bold', helvetica, arial, sans-serif;
+
+  /* padding: 0px 20px; */
+}
+
+.nav-top-button:hover {
+  color:#6504b5;
+}
+
+.padded {
+  background-color:transparent;
+  padding: 0px 10px;
+}
+
+.padded2 {
+  background-color:transparent;
+  width:70px;
+}
+
+.no-bold {
+  font-weight: normal;
+  font-family: "Nexa Regular";
+}
+
+.nav-top-container-searching{
+  /* background-color:pink; */
+  /* padding: 0px 0px; */
+  width: 74%;
+  height:70px;
+
+}
+
+.nav-top-container-searching-bar {
+
+  background-color:transparent;
+  border-top: none;
+  display: inline-block;
+  width:40%;
+}
+
+.article-search {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  font-family: "Nexa Regular";
+  border-top: 1px solid #6504b5;
+}
+
+.white {
+  color: white
+}
+
+.white:hover {
+  color:white
+}
+
+.left-border {
+  border-left: 1px solid #410078;
+}
+
+.large {
+  font-size: 48px;
+}
+
+.nav-search-icon {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  background: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-search.png") no-repeat center;
+  background-size:25px 30px;
+  display: inline-block;
+}
+
+.nav-top-button:hover .nav-search-icon{
+  background: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-search-hover.png") no-repeat center;
+  background-size:25px 30px;
+}
+
+.nav-searching-icon {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  background: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-searching.png") no-repeat center;
+  background-size:25px 30px;
+  display: inline-block;
+}
+
+.navClose {
+  background: url(https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-close_colorWhite.svg) no-repeat center;
+  background-size:20px 20px;
+}

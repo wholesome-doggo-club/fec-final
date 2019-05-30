@@ -1,0 +1,107 @@
+#nav-form-bar-drop {
+  min-width:1235px;
+  background-color: #6504b5;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  height: 55px;
+  position:absolute; 
+  left: 0;
+  right: 0;
+  top: 70px;
+  padding:0px;
+  transform: scaleY(0);
+  transform-origin: center top;
+  transition: transform .15s cubic-bezier(.215,.61,.355,1), -webkit-transform .15s cubic-bezier(.215,.61,.355,1);
+}
+
+.nav-btn-container-breed {
+  border: none;
+  color: #ECD7FD;
+  /* padding: 20px 10px; */
+  border-left: 1px solid #444444;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+
+  height:100%;
+  width:200px;
+}
+
+.nav-btn-container-breed a {
+  color: #ECD7FD;
+  text-decoration: none;
+}
+.nav-btn-container-breed a:hover {
+  color: #ffffff;
+}
+
+.no-border {
+  border: none;
+}
+
+.nav-breed-button {
+  background-color: transparent;
+  border: none;
+  color: #ecd7fd;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 14px;
+  padding: 0px;
+  height:55px;
+  width: 100%;
+  /* border: 1px solid #2e0152; */
+}
+
+.animateNav {
+  animation-duration: 0.15s;
+  -webkit-animation-duration: 0.15s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes slideInDown {
+  from {
+    transform: scaleY(0);
+    visibility: hidden;
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: scaleY(0);
+    visibility: hidden;
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.navSlideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+.filler {
+  display: inline-block;
+  height:100%;
+  width: 100%;
+}
+
+.nav-breed-table{
+  height:100%;
+  font-size: 14px;
+  color: #ecd7fd;
+}
+
+.nav-breed-table:hover {
+  color: #ffffff;
+}

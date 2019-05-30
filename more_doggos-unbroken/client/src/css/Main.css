@@ -1,0 +1,56 @@
+body {
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h5 {
+    margin: 0;
+}
+
+.doggoinfo-main {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom:  40px;
+}
+.doggorow-main {
+    margin-top: 50px;
+}
+
+.doggoadvice-main {
+    margin-bottom: 50px;
+}
+
+.fullpage {
+    height: 100%;
+    width: 100%;
+    left: 0;
+}
+
+.doggoadvice-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 70%;
+  }
+
+
+.dogcard-container {
+    display: block;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    /* border: 3px solid; */
+  }
+
+  .title-thing-TEMP {
+    text-align: center;
+    width:100%;
+    top: 20px;
+    font-family: 'Nexa';
+    font-size: 40px;
+    color: #6504B5;
+    margin-top: 50px;
+}
