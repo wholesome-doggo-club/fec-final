@@ -5,6 +5,13 @@
     src: url(NexaRegular.woff) format('woff');
   }
 
+@font-face {
+  font-family: 'Nexa';
+  font-style: regular;
+  font-weight: 700;
+  src: url(Nexa-Bold.otf) format('opentype');
+}
+
 
 #app-nav {
   z-index: 999;
