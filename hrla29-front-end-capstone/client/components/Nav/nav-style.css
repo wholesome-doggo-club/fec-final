@@ -11,7 +11,7 @@
   padding:0px;
   height:70px;
   background-size:100%;
-  z-index: 99;
+  z-index: 1300;
   box-shadow: 0px 1px 3px #50028f69;
 }
 
@@ -37,7 +37,7 @@
   background-color:transparent;
   display: inline-block;
   height: 70px;
-  font-family: 'Nexa Regular', helvetica, arial, sans-serif;
+  /* font-family: 'Nexa Regular', helvetica, arial, sans-serif; */
 }
 
 .nav-top-button {
@@ -50,7 +50,7 @@
   display: inline-block;
   font-weight: 700;
   font-size: 14px;
-  font-family: 'Nexa Bold', helvetica, arial, sans-serif;
+  /* font-family: 'Nexa Bold', helvetica, arial, sans-serif; */
 }
 
 .nav-gray-purple {
@@ -58,7 +58,7 @@
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
-  font-family: 'Nexa Bold', helvetica, arial, sans-serif;
+  /* font-family: 'Nexa Bold', helvetica, arial, sans-serif; */
 }
 
 .nav-gray-purple:hover {
@@ -109,6 +109,7 @@
   left: 0;
   cursor: pointer;
 }
+
 
 .modal-state {
   display: none;
@@ -196,11 +197,12 @@ wtf
   height: 507px;
   padding: 120px 60px 60px;
   font-size: 14px;
-  font-family: 'Nexa Bold', helvetica;
+  font-weight: 700;
+  /* font-family: 'Nexa Bold', helvetica; */
 }
 .nav-popup-right-container h1{
   text-align: left;
-  font-family: 'Nexa Regular', helvetica;
+  /* font-family: 'Nexa Regular', helvetica; */
 }
 
 .nav-popup-right-container a {
@@ -208,7 +210,7 @@ wtf
   color:#6504b5;
   font-size: 14px;
   font-weight: 700;
-  font-family: 'Nexa Bold', helvetica;
+  /* font-family: 'Nexa Bold', helvetica; */
   text-decoration: none;
 }
 .nav-popup-right-container a:hover {
@@ -235,7 +237,8 @@ wtf
   color: #6504b5;
   font-size: 16px;
   line-height: normal;
-  font-family: "Nexa Bold"
+  font-weight: 700;
+  /* font-family: "Nexa Bold" */
 }
 .nav-popup-container-form {
   position: relative;
@@ -284,7 +287,7 @@ wtf
   -webkit-appearance: none;
   font-weight: 700;
   font-size: 14px;
-  font-family: 'Nexa Bold', helvetica;
+  /* font-family: 'Nexa Bold', helvetica; */
   /* font-size: 14px; */
   line-height: 1.4;
 }
@@ -308,7 +311,8 @@ wtf
   color: white;
   padding: 120px 60px 60px;
   font-size: 14px;
-  font-family: 'Nexa Bold', helvetica;
+  font-weight: 700;
+  /* font-family: 'Nexa Bold', helvetica; */
 
 }
 .nav-popup-left-container li{
