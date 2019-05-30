@@ -1,0 +1,451 @@
+body {
+  margin:0;
+  padding:0;
+  /* box-sizing: border-box; */
+  background-color: black;
+}
+
+
+.smallSlider { 
+  width: 400px;
+  height: 380px; 
+  filter: saturate(50%) brightness(.50);
+  transition: 0.35s ease-in-out; 
+}
+
+
+.photoContainer {
+  overflow: hidden;
+  margin: auto !important;
+  width: 89%;
+}
+
+.photoSlider {
+  display: flex;
+  width: 50%;
+  height: 50%;
+  transition: transform 160ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  /* object-fit: cover; */
+}
+
+.active-1 {
+  /* transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+  filter: saturate(100%) brightness(1);
+}
+
+
+.active-2 {
+  /* transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+  filter: saturate(100%) brightness(1);
+}
+
+.active-3 {
+  filter: saturate(100%) brightness(1);
+}
+
+.active-0 {
+  filter: saturate(100%) brightness(1);
+}
+
+
+/* img:hover {
+  transition: 0.2s ease-in-out;
+  filter: saturate(60%) brightness(0.6);
+} */
+
+#nextBtn {
+  z-index: 10;
+  border: 2px solid transparent;
+  position:absolute;
+  right: 37px;
+  width: 400px;
+  height: 380px;
+  /* top: 3.1%; */
+  opacity: 0.75;
+  background-color: black;
+  transition: 0.15s ease-in-out;
+  /* filter: saturate(.1) brightness(.1); */
+}
+
+#nextBtn:hover{
+  transition: 0.15s ease-in-out;
+  /* filter: saturate(60%) brightness(0.6); */
+  opacity: .55;
+}
+
+#prevBtn {
+  z-index: 10;
+  border: 2px solid transparent;
+  position:absolute;
+  left: 71px;
+  width: 401px;
+  height: 380px;
+  /* top: 3.1%; */
+  opacity: 0.75;
+  background-color: black;
+  transition: 0.15s ease-in-out;
+  /* filter: saturate(.1) brightness(.1); */
+}
+
+#prevBtn:hover{
+  transition: 0.15s ease-in-out;
+  /* filter: saturate(60%) brightness(0.6); */
+  opacity: .55;
+}
+
+#expandBtn {
+  z-index: 10;
+  border: 2px solid transparent;
+  position:absolute;
+  width: 401px;
+  height: 380px;
+  left: 454px;
+  background-color: transparent;
+}
+
+
+
+.expandContainer {
+  
+  overflow: hidden;
+  margin: auto;
+
+}
+
+.expandSlider {
+  display: flex;
+  width: 1100px;
+  height: 1100px;
+  transition: transform 130ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+img#expandImg {
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  padding-left: 35%;
+  padding-right: 33%;
+  margin-top: 35px;
+}
+
+
+
+#btnArrowLeft {
+  z-index: 11;
+  background-image: url('./images/chevronLeft_colorWhite\ .svg');
+  background-position-x: 45%;
+  background-position-y: 50%;
+  background-size:40%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  left: 100px;
+  top:180px;
+  opacity: 1;
+}
+
+
+#btnArrowLeft:hover::after {
+  transition: .4s ease-in-out;
+  content: "";
+  background-image: url('./images/chevronLeft_colorWhite\ .svg');
+  background-position-x: 45%;
+  background-position-y: 50%;
+  background-size:40%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: grey;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 25px;
+  position: absolute;
+  z-index: -1;  
+}
+
+#btnArrowRight {
+  z-index: 11;
+  background-image: url('./images/chevronRight_colorWhite.svg');
+  background-position-x: 55%;
+  background-position-y: 50%;
+  background-size:40%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  right: 100px;
+  top:180px;
+  opacity: 1;
+}
+
+
+#btnArrowRight:hover::after {
+  transition: .4s ease-in-out;
+  content: "";
+  background-image: url('./images/chevronRight_colorWhite.svg');
+  background-position-x: 55%;
+  background-position-y: 50%;
+  background-size:40%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: grey;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 25px;
+  position: absolute;
+  z-index: -1;  
+}
+
+.arrowBtn {
+  visibility:hidden;
+}
+
+.mainBtns:hover > .arrowBtn{
+  visibility:visible;
+}
+
+#btnExpand {
+  z-index: 11;
+  background-image: url('./images/Expand\ view\ free\ icon\ 5.svg');
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size:40%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  right: 100px;
+  top:350px;
+  opacity: 1;
+}
+
+
+#btnExpand:hover::after {
+  transition: .4s ease-in-out;
+  content: "";
+  background-image: url('./images/Expand\ view\ free\ icon\ 5.svg');
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size:45%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: grey;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 25px;
+  position: absolute;
+  z-index: -1;  
+}
+
+#btnArrowLeft {
+  z-index: 11;
+  background-image: url('./images/chevronLeft_colorWhite\ .svg');
+  background-position-x: 45%;
+  background-position-y: 50%;
+  background-size:40%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  left: 100px;
+  top:180px;
+  opacity: 1;
+}
+
+
+#btnArrowLeft:hover::after {
+  transition: .4s ease-in-out;
+  content: "";
+  background-image: url('./images/chevronLeft_colorWhite\ .svg');
+  background-position-x: 45%;
+  background-position-y: 50%;
+  background-size:40%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: grey;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 25px;
+  position: absolute;
+  z-index: -1;  
+}
+
+#btnArrowRight {
+  z-index: 11;
+  background-image: url('./images/chevronRight_colorWhite.svg');
+  background-position-x: 55%;
+  background-position-y: 50%;
+  background-size:40%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  right: 100px;
+  top:180px;
+  opacity: 1;
+}
+
+
+#btnArrowRight:hover::after {
+  transition: .4s ease-in-out;
+  content: "";
+  background-image: url('./images/chevronRight_colorWhite.svg');
+  background-position-x: 55%;
+  background-position-y: 50%;
+  background-size:40%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: grey;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 25px;
+  position: absolute;
+  z-index: -1;  
+}
+
+#btnArrowLeftExpand {
+  z-index: 11;
+  background-image: url('./images/chevronLeft_colorWhite\ .svg');
+  background-position-x: 45%;
+  background-position-y: 50%;
+  background-size:40%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  left: 40px;
+  top:320px;
+  opacity: 1;
+}
+
+
+#btnArrowLeftExpand:hover::after {
+  transition: .4s ease-in-out;
+  content: "";
+  background-image: url('./images/chevronLeft_colorWhite\ .svg');
+  background-position-x: 45%;
+  background-position-y: 50%;
+  background-size:40%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: grey;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 25px;
+  position: absolute;
+  z-index: -1;  
+}
+
+#btnArrowRightExpand {
+  z-index: 11;
+  background-image: url('./images/chevronRight_colorWhite.svg');
+  background-position-x: 55%;
+  background-position-y: 50%;
+  background-size:40%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  right: 40px;
+  top:320px;
+  opacity: 1;
+}
+
+
+#btnArrowRightExpand:hover::after {
+  transition: .4s ease-in-out;
+  content: "";
+  background-image: url('./images/chevronRight_colorWhite.svg');
+  background-position-x: 55%;
+  background-position-y: 50%;
+  background-size:40%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: grey;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 25px;
+  position: absolute;
+  z-index: -1;  
+}
+
+#btnReturn {
+  z-index: 11;
+  background-image: url('./images/icon-close_colorWhite.svg');
+  background-position-x: 55%;
+  background-position-y: 50%;
+  background-size:50%;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  right: 40px;
+  top:50px;
+  opacity: 1;
+}
+
+button:focus {outline:0;}
+button#btnArrowLeft:focus { outline:0 !important; box-shadow: none;}
+button#btnArrowRight:focus { outline:0 !important; box-shadow: none;}
+button#btnExpand:focus { outline:0 !important; box-shadow: none;}
+button#btnArrowLeftExpand:focus { outline:0 !important; box-shadow: none;}
+button#btnArrowRightExpand:focus { outline:0 !important; box-shadow: none;}
+button#btnReturn:focus { outline:0 !important; box-shadow: none;}
+
+.navDotContainer {
+  background-color:rgb(239,238,241);
+  width: 200px;
+
+  text-align: center;
+  margin: auto; 
+}
+
+.dotButton {
+  width: 11px;
+  height: 11px;
+  margin-left: 6px; 
+  border: none;
+  background-color: #d2d1d3; 
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.activeDotContainer-0 .activeDot-0 {
+  /* transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+  background-color: rgb(101,4,181);
+}
+
+.activeDotContainer-1 .activeDot-1 {
+  /* transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+  background-color: rgb(101,4,181);
+}
+
+.activeDotContainer-2 .activeDot-2 {
+  /* transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+  background-color: rgb(101,4,181);
+}
+.activeDotContainer-3 .activeDot-3 {
+  /* transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+  background-color: rgb(101,4,181);
+}

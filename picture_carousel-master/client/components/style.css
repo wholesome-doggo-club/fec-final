@@ -1,0 +1,33 @@
+body {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+
+
+img {
+  width: 400px;
+  height: 380px;
+  
+}
+
+
+.photoContainer {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.photoSlider {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  transition: transform 170ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+
+
+
+

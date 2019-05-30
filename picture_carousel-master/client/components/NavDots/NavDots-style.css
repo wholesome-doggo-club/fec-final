@@ -1,0 +1,36 @@
+.navDotContainer {
+  background-color:rgb(239,238,241);
+  width: 200px;
+
+  text-align: center;
+  margin: auto; 
+}
+
+.dotButton {
+  width: 11px;
+  height: 11px;
+  margin-left: 6px; 
+  border: none;
+  background-color: #d2d1d3; 
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.activeDotContainer-0 .activeDot-0 {
+  /* transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+  background-color: rgb(101,4,181);
+}
+
+.activeDotContainer-1 .activeDot-1 {
+  /* transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+  background-color: rgb(101,4,181);
+}
+
+.activeDotContainer-2 .activeDot-2 {
+  /* transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+  background-color: rgb(101,4,181);
+}
+.activeDotContainer-3 .activeDot-3 {
+  /* transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955); */
+  background-color: rgb(101,4,181);
+}
