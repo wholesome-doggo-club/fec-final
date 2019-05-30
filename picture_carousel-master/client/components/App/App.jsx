@@ -110,7 +110,7 @@ class App extends React.Component {
 
   render () {
     const { currentIndex, gallery, view, currentDot } = this.state;
-    const size = 500;
+    const size = 550;
     
     if(view === 'main' && gallery.length > 0) {
       return (

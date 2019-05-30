@@ -28,7 +28,7 @@ const DoggoInfo = (props) => {
       </div>
       <div className="doggoinfo-right">
         <div className="doggoinfo-right-top">
-            <div className="doggoinfo-right-top-ask"> Ask About {props.doggo.name} </div>
+            <div className="doggoinfo-right-top-ask" onClick={() => document.getElementById('askabout-outer').scrollIntoView()}> Ask About {props.doggo.name} </div>
             <div className="doggoinfo-right-top-sponsor"> Sponsor {props.doggo.name} </div>
           <div className="doggoinfo-right-top-shareprint">
             <div className="doggoinfo-right-top-share">Share</div> <div className="doggoinfo-right-top-print">Print</div>

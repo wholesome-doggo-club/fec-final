@@ -5,10 +5,6 @@
     src: url(NexaRegular.woff) format('woff');
   }
 
-body div span {
-    /* font-family: 'Nexa' !important; */
-    background-color: pink;
-}
 
 #app-nav {
   z-index: 999;
