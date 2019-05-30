@@ -204,7 +204,6 @@ var data = [
 ]
 
 const insertDogPhotos = function() {
-  console.log(PetPictures)
   console.log('insertDogPhotos seeding function invoked! Check your database at capstone')
   for(var element of data) {
     models.create({data: element})

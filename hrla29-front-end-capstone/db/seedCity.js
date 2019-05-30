@@ -506,7 +506,7 @@ const lotsOfCities = [
 
 const insertSampleCities = function() {
   console.log('insertSampleCities seeding function invoked! Check your database at capstone')
-  City.create(samplePosts)
+  City.create(lotsOfCities)
     .then(() => db.disconnect());
 };
 

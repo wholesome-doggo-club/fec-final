@@ -7,6 +7,7 @@
 
 body div span {
     font-family: 'Nexa' !important;
+    background-color: pink;
 }
 
 #app-nav {
