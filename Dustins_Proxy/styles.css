@@ -5,9 +5,9 @@
     src: url(NexaRegular.woff) format('woff');
   }
 
-body div span {
-    /* font-family: 'Nexa' !important; */
-    background-color: pink;
+body, div, span, input, button, table{
+    font-family: "Nexa", "Comic Sans MS";
+    /* background-color: pink; */
 }
 
 #app-nav {
