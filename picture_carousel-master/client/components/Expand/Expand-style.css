@@ -21,6 +21,12 @@ img#expandImg {
   margin-top: 35px;
 }
 
+#singleImageContainer {
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+
 #btnArrowLeftExpand {
   z-index: 11;
   background-image: url('https://s3-us-west-1.amazonaws.com/carouselphotos/chevronLeft_colorWhite+.svg');
@@ -115,3 +121,10 @@ button#btnExpand:focus { outline:0 !important; box-shadow: none;}
 button#btnArrowLeftExpand:focus { outline:0 !important; box-shadow: none;}
 button#btnArrowRightExpand:focus { outline:0 !important; box-shadow: none;}
 button#btnReturn:focus { outline:0 !important; box-shadow: none;}
+
+#modalCloseButton {
+  color: transparent;
+  opacity: 0;
+  font-size:48px;
+  cursor:pointer;
+}

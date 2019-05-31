@@ -27,7 +27,7 @@ class ExpandGallery extends React.Component {
         </div>
         <button id="btnArrowLeftExpand" className="flickity-button flickity-prev-next-button next" type="button"  onClick={handlePrevPicture}></button>
         <button id="btnArrowRightExpand" className="flickity-button flickity-prev-next-button next" type="button"  onClick={handleNextPicture}></button>
-        <button id="btnReturn" className="flickity-button flickity-prev-next-button next" type="button" onClick={handleReturnMain}><label className="photo-modal__close" for="expandPhotoModal"></label></button>
+        <button id="btnReturn" className="flickity-button flickity-prev-next-button next" type="button" onClick={handleReturnMain}><label  className="photo-modal__close" for="expandPhotoModal">O</label></button>
       </div>
     )
     
