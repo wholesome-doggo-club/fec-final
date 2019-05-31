@@ -123,9 +123,12 @@ class App extends React.Component {
               <button id="btnArrowLeft" className="flickity-button flickity-prev-next-button next" type="button"  onClick={this.handlePrevPicture}></button>
               <button id="btnArrowRight" className="flickity-button flickity-prev-next-button next" type="button"  onClick={this.handleNextPicture}></button>
             </div>
-            <button id="btnExpand"  className="flickity-button flickity-prev-next-button next" for="modal-1">
-            <label for="nav-register-popup-modal"><table align="center" className="nav-gray-purple"><tbody><tr><td><div className="nav-register-icon"></div></td></tr></tbody></table></label>
+            <button id="btnExpand" className="flickity-button flickity-prev-next-button next" for="modal-1">
+            <label id="modalButton" for="expandPhotoModal">
+              O
+            </label>
             </button>
+            
           </div>
             <div className="photoMain">
               <div className="photoContainer">
@@ -139,45 +142,25 @@ class App extends React.Component {
             </div>
           <NavDots currentDot={currentDot} handleCurrentIndex={this.handleCurrentIndex} gallery={gallery}/>
 
-<input className="modal-state" id="nav-register-popup-modal" type="checkbox" />
-<div className="modal">
-  <label className="modal__bg" for="nav-register-popup-modal"></label>
-  <div className="modal__inner">
-    <label className="modal__close" for="nav-register-popup-modal"></label>
-    <div id="nav-pop-up-main">
-      <span className="nav-popup-left-container">
-      <h1>Petfinder Makes Adopting Easier</h1>
-      <ul>
-        <li>Create and save your adopter profile.</li>
-        <li>Save and manage your pet searches and email communications.</li>
-        <li>Learn helpful pet care tips and receive expert advice.</li>
-        <li>Get involved and help promote adoptable pets in your area.</li>
-      </ul>
-
-
-
-    </span>
-      <span className="nav-popup-right-container">
-        <h1>Log in to Petfinder</h1>
-        <form className="nav-popup-container-form">
-          <label for="Login_Modal_username" className="field-label">Email</label>
-          <input id="Login_Modal_username" type="email" spellCheck="false" name="username" required></input>
-        </form><p></p>
-        <form className="nav-popup-container-form">
-          <input id="Login_Modal_password" type="password" spellCheck="false" autoComplete="off"></input>
-          <label for="Login_Modal_password" className="field-label">Password</label>
-        </form><p></p>
-        <button className="nav-popup-container-btn">LOG IN</button><p></p>
-        
-        <table className="line-partition"><tbody><tr><td><center><a href="">FORGOT PASSWORD?</a></center><p></p></td></tr></tbody></table><p></p>
-        DON'T HAVE AN ACCOUNT?<p></p>
-        <button className="nav-popup-container-btn">REGISTER NOW</button>
-
-      
-      </span>
+{/* Pasted here */}
+<input className="photo-modal-state" id="expandPhotoModal" type="checkbox" />
+<div className="photo-modal">
+  <label className="photo-modal__bg" for="expandPhotoModal"></label>
+  <div className="photo-modal__inner">
+    <label className="photo-modal__close" for="expandPhotoModal"></label>
+    <div id="photo-pop-up-main">
+        <ExpandGallery  
+            gallery={gallery}
+            currentIndex={currentIndex + 1}
+            handleNextPicture={this.handleNextPicture}
+            handlePrevPicture={this.handlePrevPicture}
+            handleReturnMain={this.handleReturnMain}
+            />
     </div>
   </div>
 </div>
+
+{/* Pasted here */}
         </div>
       )
     } else if (view !== 'main' && gallery.length > 0){

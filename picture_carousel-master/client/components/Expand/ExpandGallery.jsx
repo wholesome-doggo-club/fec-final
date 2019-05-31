@@ -2,6 +2,7 @@ import React from 'react';
 import ExpandSingle from './ExpandSingle.jsx';
 import "./Expand-style.css";
 
+
 class ExpandGallery extends React.Component {
   constructor(props) {
     super(props)
@@ -26,7 +27,7 @@ class ExpandGallery extends React.Component {
         </div>
         <button id="btnArrowLeftExpand" className="flickity-button flickity-prev-next-button next" type="button"  onClick={handlePrevPicture}></button>
         <button id="btnArrowRightExpand" className="flickity-button flickity-prev-next-button next" type="button"  onClick={handleNextPicture}></button>
-        <button id="btnReturn" className="flickity-button flickity-prev-next-button next" type="button" onClick={handleReturnMain}></button>
+        <button id="btnReturn" className="flickity-button flickity-prev-next-button next" type="button" onClick={handleReturnMain}><label className="photo-modal__close" for="expandPhotoModal"></label></button>
       </div>
     )
     
@@ -34,4 +35,7 @@ class ExpandGallery extends React.Component {
 
 }
 
+
+
 export default ExpandGallery;
+
