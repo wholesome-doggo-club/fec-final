@@ -17,6 +17,8 @@
 }
 
 .nav-resources-dropdown-container {
+  font-family: "Nexa";
+  font-weight: 200;
   position: absolute;
   background-color: #410078;
   top: 100%;
@@ -46,6 +48,8 @@
 
 
 .nav-resources-button {
+  font-family: "Nexa";
+  font-weight: 200;
   background-color: transparent;   /* Green #6504b5;*/
   border: none;
   color: #ecd7fd;

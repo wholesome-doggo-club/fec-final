@@ -19,21 +19,6 @@ button:focus, input:focus{
   transition: all 0.5s ease;
 }
 
-@font-face{
-  font-family: "Nexa Regular";
-  src: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/Nexa-Light.otf")
-}
-
-@font-face{
-  font-family: "Nexa Bold";
-  /* src: url('Nexa-Bold.otf') */
-}
-
-body, div, span, input {
-  font-family: 'Nexa Regular', helvetica, arial, sans-serif;
-  font-size: 14px;
-}
-
 
 .nav-top-container-logo{
   background-color:transparent;
@@ -63,7 +48,8 @@ body, div, span, input {
   background-color:transparent;
   display: inline-block;
   height: 70px;
-  font-family: 'Nexa Regular', helvetica, arial, sans-serif;
+  font-weight: 400;
+  font-family: 'Nexa', helvetica, arial, sans-serif;
 
   /* background-color:red; */
 }
@@ -87,9 +73,9 @@ body, div, span, input {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-weight: 0;
+  font-weight: 200;
   font-size: 14px;
-  font-family: 'Nexa Regular', helvetica, arial, sans-serif;
+  font-family: 'Nexa', helvetica, arial, sans-serif;
 }
 
 .nav-top-button {
@@ -149,7 +135,8 @@ body, div, span, input {
   width: 100%;
   color: white;
   font-size: 14px;
-  font-family: "Nexa Regular";
+  font-family: "Nexa";
+  font-weight: 200;
   border-top: 1px solid #6504b5;
 }
 

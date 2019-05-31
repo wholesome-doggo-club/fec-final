@@ -38,7 +38,7 @@ class Nav extends React.Component {
               <span className="nav-top-container-register">
                 <div className="nav-top-container-btn">
                   <button className="nav-top-button" for="modal-1">
-                    <label for="nav-register-popup-modal"><table align="center" className="nav-gray-purple"><tbody><tr><td><div className="nav-register-icon"></div></td><td>Sign In / Register</td></tr></tbody></table></label>
+                    <label for="nav-register-popup-modal"><table align="center" className="nav-gray-purple regularFont"><tbody><tr><td><div className="nav-register-icon"></div></td><td>Sign In / Register</td></tr></tbody></table></label>
                   </button>
                 </div>
               </span>
