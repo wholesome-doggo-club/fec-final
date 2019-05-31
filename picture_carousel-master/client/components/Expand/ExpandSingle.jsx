@@ -4,7 +4,9 @@ import "./Expand-style.css";
 const ExpandSingle = props => {
 
   return (
-      <img id="expandImg" className={`image-${props.item.id}`}src={props.item.src} />
+      
+        <img id="expandImg" className={`image-${props.item.id}`}src={props.item.src} />
+      
   )
 }
 
