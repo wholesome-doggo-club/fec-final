@@ -15,7 +15,7 @@ class ExpandGallery extends React.Component {
 
   render () {
     const { handlePrevPicture, handleNextPicture, handleReturnMain, imageSrc, gallery, currentIndex} = this.props;
-    const size = 1295;
+    const size = 1900;
     return (
       <div className="expandMain">
         <div className="expandContainer">

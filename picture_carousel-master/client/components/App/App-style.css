@@ -65,7 +65,7 @@ body {
   position:absolute;
   right: 134px;
   width: 537px;
-  height: 533px;
+  height: 520px;
   /* top: 3.1%; */
   opacity: 0.75;
   background-color: black;
@@ -85,7 +85,7 @@ body {
   position:absolute;
   left: 133px;
   width: 551px;
-  height: 533px;
+  height: 520px;
   /* top: 3.1%; */
   opacity: 0.75;
   background-color: black;
@@ -482,7 +482,7 @@ button#btnReturn:focus { outline:0 !important; box-shadow: none;}
 
 .photo-modal__close {
   font-size: 48px;
-  color: red;
+  color: transparent;
   position: absolute;
   right: -0.2em;
   top: -0.2em;

@@ -117,7 +117,7 @@ class App extends React.Component {
         <div id="main">
           <div className="mainBtns" >
             <button id="prevBtn" onClick={this.handlePrevPicture}></button>
-            <button id="expandBtn" onClick={this.handleExpandPhoto}></button>
+            <button id="expandBtn" className="photo-modal__bg" for="expandPhotoModal"></button>
             <button id="nextBtn" onClick={this.handleNextPicture}></button>
             <div className="arrowBtn">
               <button id="btnArrowLeft" className="flickity-button flickity-prev-next-button next" type="button"  onClick={this.handlePrevPicture}></button>

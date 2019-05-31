@@ -40,19 +40,19 @@
 
 .bottombar-ask {
   position: absolute;
-  right: 160px;
+  right: 190px;
   top: 20%;
   border-radius: 50px;
   /* border: 1px solid black; */
   height: 60%;
   width: 20%;
   text-align: center;
-  line-height: 45px;
+  line-height: 60px;
   color: white;
   font-family: 'Nexa';
   font-weight: 700;
   background: #6504B5;
-  font-size: 13px;
+  font-size: 18px;
 }
 
 .bottombar-ask:hover {
@@ -65,8 +65,8 @@
   top: 20%;
   border-radius: 100%;
   /* border: 1px solid black; */
-  height: 42px;
-  width: 42px;
+  height: 55px;
+  width: 55px;
   background-image: url(https://s3-us-west-1.amazonaws.com/petfinder-doggos/files/shareHover.jpg);
   background-size: cover;
 }
