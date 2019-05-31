@@ -419,7 +419,15 @@ button#btnArrowLeftExpand:focus { outline:0 !important; box-shadow: none;}
 button#btnArrowRightExpand:focus { outline:0 !important; box-shadow: none;}
 button#btnReturn:focus { outline:0 !important; box-shadow: none;}
 
-.modal {
+.nav-top-button:hover .nav-register-icon{
+  color: #6504b5;
+  background: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-register-hover.png") no-repeat center;
+  background-size:28px 30px;
+}
+
+/* [Object] Modal
+ * =============================== */
+ .photo-modal {
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -428,11 +436,11 @@ button#btnReturn:focus { outline:0 !important; box-shadow: none;}
   bottom: 0;
   left: 0;
   text-align: left;
-  background: #2e0152;
+  background:black;
   transition: opacity .25s ease;
 }
 
-.modal__bg {
+.photo-modal__bg {
   position: absolute;
   top: 0;
   right: 0;
@@ -442,20 +450,20 @@ button#btnReturn:focus { outline:0 !important; box-shadow: none;}
 }
 
 
-.modal-state {
+.photo-modal-state {
   display: none;
 }
 
-.modal-state:checked + .modal {
+.photo-modal-state:checked + .photo-modal {
   opacity: 1;
   visibility: visible;
 }
 
-.modal-state:checked + .modal .modal__inner {
+.photo-modal-state:checked + .photo-modal .photo-modal__inner {
   top: 0;
 }
 
-.modal__inner {
+.photo-modal__inner {
   transition: top .25s ease;
   position: absolute;
   top: -20%;
@@ -465,14 +473,14 @@ button#btnReturn:focus { outline:0 !important; box-shadow: none;}
   width: 100%;
   margin: auto;
   overflow: auto;
-  background: #fff;
-  border-radius: 10px;
+  background: black;
+
   /* padding: 1em 2em; */
-  height: 687px;
-  max-width: 924px;
+  height: 90%;
+  /* max-width: 924px; */
 }
 
-.modal__close {
+.photo-modal__close {
   position: absolute;
   right: 1em;
   top: 1em;
@@ -481,13 +489,13 @@ button#btnReturn:focus { outline:0 !important; box-shadow: none;}
   cursor: pointer;
 }
 
-.modal__close:after,
-.modal__close:before {
+.photo-modal__close:after,
+.photo-modal__close:before {
   content: '';
   position: absolute;
   width: 2px;
   height: 1.5em;
-  background: #ccc;
+  background: transparent;
   display: block;
   transform: rotate(45deg);
   left: 50%;
@@ -495,20 +503,39 @@ button#btnReturn:focus { outline:0 !important; box-shadow: none;}
   top: 0;
 }
 
-.modal__close:hover:after,
-.modal__close:hover:before {
-  background: #aaa;
+.photo-modal__close:hover:after,
+.photo-modal__close:hover:before {
+  background: transparent;
 }
 
-.modal__close:before {
+.photo-modal__close:before {
   transform: rotate(-45deg);
 }
 
 @media screen and (max-width: 768px) {
 	
-  .modal__inner {
+  .photo-modal__inner {
     width: 90%;
     height: 90%;
     box-sizing: border-box;
   }
+}
+
+
+
+#photo-pop-up-main {
+  display:flex;
+}
+
+
+
+.photo-modal {
+  z-index: 2000;
+}
+
+#modalButton {
+  color: transparent;
+  opacity: 0;
+  font-size:48px;
+  cursor:pointer;
 }
