@@ -42,7 +42,7 @@
 }
 
 .h5 {
-  font-size: 12px;
+  font-size: 14px;
   font-family: 'Nexa';
   margin-top: 8px;
   margin-bottom: 5px;
@@ -122,10 +122,11 @@
   color: #6504B5;
   text-align: center;
   font-size: 16px;
-  line-height: 48px;
+  line-height: 42px;
   top: 10%;
   left: 7%;
   font-family: 'Nexa';
+  font-weight: 700;
 }
 
 .doggoinfo-right-top-ask:hover {
@@ -143,10 +144,11 @@
   color: white;
   text-align: center;
   font-size: 16px;
-  line-height: 48px;
+  line-height: 42px;
   top: 40%;
   left: 7%;
   font-family: 'Nexa';
+  font-weight: 700;
 }
 
 .doggoinfo-right-top-sponsor:hover {
@@ -170,12 +172,14 @@
   left: 0;
   bottom: 0;
   border-right: 1px solid black;
-  line-height: 60px;
+  line-height: 55px;
   font-family: 'Nexa';
+  font-weight: 700;
 }
 
 .doggoinfo-right-top-share:hover {
   background-color: rgb(69, 0, 126);
+  border-bottom-left-radius: 10px;
 }
 
 .doggoinfo-right-top-print {
@@ -184,12 +188,14 @@
   height: 100%;
   right: 0;
   bottom: 0;
-  line-height: 60px;
+  line-height: 55px;
   font-family: 'Nexa';
+  font-weight: 700;
 }
 
 .doggoinfo-right-top-print:hover {
   background-color: rgb(69, 0, 126);
+  border-bottom-right-radius: 10px;
 }
 
 .doggoinfo-right-bottom {
@@ -220,6 +226,7 @@
   border-radius: 10px;
   box-shadow: 1px 1px 1px 1px lightgray;
   font-family: 'Nexa';
+  font-size: 16px;
 }
 
 .doggoinfo-right-bottom-location {
@@ -251,6 +258,7 @@
   line-height: 50px;
   font-size: 13px;
   font-family: 'Nexa';
+  font-weight: 700;
 }
 
 .doggoinfo-right-bottom-button:hover {

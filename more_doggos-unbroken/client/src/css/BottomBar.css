@@ -44,12 +44,13 @@
   top: 20%;
   border-radius: 50px;
   /* border: 1px solid black; */
-  height: 42px;
-  width: 220px;
+  height: 60%;
+  width: 20%;
   text-align: center;
   line-height: 45px;
   color: white;
   font-family: 'Nexa';
+  font-weight: 700;
   background: #6504B5;
   font-size: 13px;
 }
