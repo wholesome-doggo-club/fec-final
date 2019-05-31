@@ -12,6 +12,13 @@
   src: url(Nexa-Bold.otf) format('opentype');
 }
 
+@font-face {
+  font-family: 'Nexa';
+  font-style: regular;
+  font-weight: 200;
+  src: url(Nexa-Light.otf) format('opentype');
+}
+
 
 #app-nav {
   z-index: 999;

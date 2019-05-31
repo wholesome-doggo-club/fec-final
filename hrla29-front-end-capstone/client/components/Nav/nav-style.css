@@ -204,9 +204,15 @@ wtf
   font-weight: 700;
   font-family: "Nexa";
 }
-.nav-popup-right-container h1{
+.nav-popup-left-container h1{
   text-align: left;
   font-family: "Nexa";
+  font-weight: 400;
+}
+.nav-popup-right-container h1 {
+  text-align: left;
+  font-family: "Nexa";
+  font-weight: 200;
 }
 
 .nav-popup-right-container a {
@@ -254,6 +260,7 @@ wtf
   top: 7px;
   left: 15px;
   pointer-events: none;
+  font-weight: 200;
 }
 
 .nav-popup-container-btn:hover {
@@ -314,7 +321,7 @@ wtf
   color: white;
   padding: 120px 60px 60px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 200;
   font-family: "Nexa";
 
 }
